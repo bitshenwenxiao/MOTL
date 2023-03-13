@@ -48,8 +48,8 @@ class Input():
         for i, bbox in enumerate(self.bboxes):
             data = bbox
             x, y = (data[0] + data[2]) / 2, (data[1] + data[3]) / 2
-            angle_frame_0 = math.atan((x - 640.0) / 640.0 * np.tan(self.Euler_view[0] * np.pi / 180.0 / 2)) * 180 / np.pi
-            angle_frame_1 = math.atan(-(y - 360.0) / 360.0 * np.tan(self.Euler_view[1] * np.pi / 180.0 / 2)) * 180 / np.pi
+            angle_frame_0 = np.arctan((x - 640.0) / 640.0 * np.tan(self.Euler_view[0] * np.pi / 180.0 / 2)) * 180 / np.pi
+            angle_frame_1 = -np.arctan((y - 360.0) / 360.0 * np.tan(self.Euler_view[1] * np.pi / 180.0 / 2)) * 180 / np.pi
             angle_frame = np.array([angle_frame_0, angle_frame_1, 0])
             angle_out = add_angle(self.Euler_inertial2body, self.Euler_body2camera, angle_frame)
             vector = Euler2vector(angle_out)
