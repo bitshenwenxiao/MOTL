@@ -13,7 +13,7 @@ you should first download the [MUMO dataset](https://github.com/bitshenwenxiao/M
 you should run object detection on MUMO dataset. The results format is 
 
     x_left_top, y_left_top, x_right_bottom, y_right_bottom
-We open our detection results in the compressed file "[detection.zip](https://drive.google.com/file/d/1PDd3DV9dstR08AyvOcSmbsy3nFcz62FH/view?usp=share_link)". For fair comparison, we suggest you use the same the directory detection results for different solutions of multi-UAV multi-object tracking.  If you run other object detectors, the directory organization of results should be same as ours.
+We open our detection results in the compressed file "[detection.zip](https://drive.google.com/file/d/1q1UJDrgxmQo8mxiNzisxkkz9NAvFsfVm/view?usp=sharing)". For fair comparison, we suggest you use the same the directory detection results for different solutions of multi-UAV multi-object tracking.  If you run other object detectors, the directory organization of results should be same as ours.
 ### 3. run our solution for multi-UAV multi-object Tracking.
 You should revise these directory paths at lines 116-118 in the file "main.py".
 
