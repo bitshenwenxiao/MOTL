@@ -3,7 +3,7 @@ Vision based Multi-object Tracking and Localization by UAV Swarm
 
 Hao Shen, Defu Lin, Xiwen Yang, Shaoming He 
 
-The  code of our paper "Vision based Multi-object Tracking and Localization by UAV Swarm" (The link will be updated after publication).   The code is based on the [VehicleNet](https://github.com/michuanhaohao/AICITY2021_Track2_DMT).
+The  code of our paper [Vision based Multi-object Tracking and Localization by UAV Swarm](https://ieeexplore.ieee.org/document/10220103).   The code is based on the [VehicleNet](https://github.com/michuanhaohao/AICITY2021_Track2_DMT).
 The video of the constructed situation in AirSim simulation system  is available at [YouTube](https://youtu.be/erCiENAOEaM).
 
 ## test on MUMO dataset
