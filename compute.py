@@ -8,7 +8,8 @@ def compute_perpendicular_foot_direct(point1, vector1, point2, vector2):
     c = np.inner(vector2, vector2)
     d = np.inner((point2-point1), vector1)
     e = np.inner((point2-point1), vector2)
-    if a == 0:
+    #if a == 0:
+    if abs(a) < 0.01:
         t1 = d/b
         t2 = -e/c
         mod = 'perpendicular'
