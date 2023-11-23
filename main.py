@@ -46,9 +46,9 @@ class  Track():
             out.append(cost)
         return out
     def spatial_assotation(self, cost_spatial, positions, list_input):
+        reports = []
         for i, cost in enumerate(cost_spatial):
             matches, unmatched_a, unmatched_b = linear_assignment(cost, 0.3)
-            reports = []
             for ii, jj in matches:
                 reports.append([1,self.UAVID[i][0], ii, self.UAVID[i][1], jj, positions[i][ii, jj, 0], positions[i][ii, jj, 1], positions[i][ii, jj, 2] ])
         objects = list_object()
