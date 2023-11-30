@@ -25,7 +25,7 @@ class STrack():
         if self.step>0 and self.step<10:
             cof = self.step*1.0/10
             self.feature = cof * self.feature + (1-cof)*feat
-        if self.step > 0:
+        if self.step > 10:
             cof = self.alpha
             self.feature = cof * self.feature + (1 - cof) * feat
         self.step = self.step + 1
