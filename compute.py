@@ -55,7 +55,7 @@ def compute_cost_apperance_spatial_onematch(query, candidate, white):
     for j in range(query_features.size(0), 2):
         query_features_tem[j, :] = white
     for j in range(candidate_features.size(0), 2):
-        query_features_tem[j, :] = white
+        candidate_features_tem[j, :] = white
 
     distmat = re_ranking(query_features_tem, candidate_features_tem, k1=2, k2=2, lambda_value=0.3)
     distmat = distmat[0:query_features.size(0), 0:candidate_features.size(0)]
